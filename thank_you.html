@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.png">
+    <title>JRA Limousine | Home</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Styles for reservation form -->
+    <link href="css/form.css" rel="stylesheet">
+
+    <!-- jQuery Javascript Files -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- jQuery CSS Files -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#our_fleet">Our Fleet</a></li>
+            <li><a href="index.html#contact_us">Contact Us</a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+
+          <p class="nav_number">(203) 253-0731</p>
+        </div>
+      </div>
+
+
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4 thank_you">
+              <h2>Thank You</h2>
+              <p>We will be contacting you shortly <br/>through email/phone.</p>
+              <p><a class="btn btn-default reserve" href="#" role="button">Reserve Another Trip</a></p>
+              <p><a href="index.html">Home Page</a></p>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            </div><!--END: row-->
+
+            
+
+
+    
+
+          <div id="dialog" title="Trip Reservation Form">
+  <!-- Form -->
+    <form id="contact-form" class="clearfix" action="send_form_email.php" method="post">
+      <div class="columns clearfix">
+        <div>
+          <label>
+            <span>Pickup Location: (required)</span>
+            <input placeholder="Please enter the location of pickup" type="text" tabindex="1" name="pickup" required autofocus>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Drop-off Location: (required)</span>
+            <input placeholder="Please enter the location of dropoff" type="text" tabindex="2" name="dropoff" required autofocus>
+          </label>
+        </div>
+      </div><!--END: columns-->
+
+
+      <div class="columns clearfix">  
+        <div>
+          <label>
+            <span>Date: (required)</span>
+            <input placeholder="Please enter the date of your trip" type="text" tabindex="3" name="date" id="datepicker" required autofocus>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Time: (required)</span>
+            <input placeholder="Please enter the time of your trip" type="text" tabindex="4" name="time" required autofocus>
+          </label>
+        </div>
+      </div><!--END: columns-->
+ 
+      <div class="columns clearfix">  
+        <div>
+          <label>
+            <span>Name: (required)</span>
+            <input placeholder="Please enter your name" type="text" tabindex="5" name="name" required autofocus>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Car Type: (required)</span>
+            <!--<input placeholder="What car model would you like to pick you up?" type="text" tabindex="6" name="car_type" required autofocus>-->
+            <select tabindex="6" name="car_type" required autofocus>
+              <option value="Lincoln Town Car">Lincoln Town Car</option>
+              <option value="Ford Expedition">Ford Expedition</option>
+              <option value="Lincoln MKT">Lincoln MKT</option>
+            </select>
+          </label>
+        </div>
+      </div><!--END: columns-->
+
+      <div class="columns clearfix">  
+        <div>
+          <label>
+            <span>Email: (required)</span>
+            <input placeholder="Please enter your email address" type="email" tabindex="7" name="email" required>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Telephone: (required)</span>
+            <input placeholder="Please enter your number" type="tel" tabindex="8" name="telephone" required>
+          </label>
+        </div> 
+      </div><!--END: columns-->
+
+      <div class="columns clearfix">
+        <div>
+          <label>
+            <span>Company: (optional)</span>
+            <input placeholder="Please enter your company name" type="text" tabindex="9" name="company" required autofocus>
+          </label>
+        </div>
+        <div>
+          <label>
+            <span>Special Instructions: (optional)</span>
+            <textarea placeholder="Include all the details you can" tabindex="10" name="message" required></textarea>
+          </label>
+        </div>
+      </div><!--END: columns-->
+
+      <div>
+        <button name="submit" type="submit" name="contact-submit">Send Email</button>
+            <!--<a href="http://www.jralimousine.com.com/email_form.php">Email Form</a>-->
+      </div>
+    </form>
+    <!-- /Form -->
+</div><!--END: dialog-->
+
+        
+                <hr>
+                <footer>
+                  <p>&copy; JRA Limousine 2014</p>
+                </footer>
+                </div> <!-- /container -->
+                <!-- Bootstrap core JavaScript
+                ================================================== -->
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script src="js/bootstrap.min.js"></script>
+
+                <!--JS for reservation form-->
+                <script src="js/form.js"></script>
+
+              </body>
+            </html>

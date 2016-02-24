@@ -1,0 +1,336 @@
+/*****GLOBAL****/
+/* Move down content because we have a fixed navbar that is 50px tall */
+body{
+  padding: 50px 0 10px 0;
+  background: url("../images/blizzard.png");
+}
+img{
+	max-width: 100%;
+}
+/*****STRUCTURE****/
+
+/*****NAVBAR****/
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+.navbar-inverse .navbar-brand{
+  background: url("../images/jra_nav_logo.png") 15px center no-repeat;
+  background-size: 180px auto;
+  width: 200px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #ddd;
+}
+.navbar-collapse{
+  width: 35%;
+  float: left;
+}
+.nav_number{
+  width: 30%;
+  width: 200px;
+  float: right;
+  text-align: right;
+  margin: 5px 0 0 0;
+  color: #ddd;
+  font-size: 24px;
+  background: url("../images/phone_icon.png") left 4px no-repeat;
+}
+
+/*****Custom****/
+/*.jumbotron{
+  background: url(../images/nyc_skyline.jpg) center center no-repeat;
+}*/
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+/***Fonts***/
+@font-face {
+    font-family: canterLight;
+    src: url(../fonts/canter/canter_light.otf);
+}
+@font-face {
+    font-family: canterBold;
+    src: url(../fonts/canter/canter_bold.otf);
+}
+
+/* HEADER SECTION
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  min-height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /*height: 500px;*/
+}
+.slide_two img{
+  top: -90px !important;
+}
+.slide_three img{
+  top: -50px !important;
+}
+.mobile_feature{
+  display: none;
+}
+.col-md-4{
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+.row h2{
+  font-size: 36px;
+  font-family: canterBold, serif;
+  text-align: center;
+}
+.col-md-4 ul{
+  text-align: left;
+}
+.col-md-4 li{
+  list-style: disc outside;
+}
+.clearfix .col-md-6{
+  padding: 0;
+}
+
+
+/* OUR FLEET SECTION
+-------------------------------------------------- */
+.our_fleet{
+  height: 290px;
+  margin-top: 30px;
+  background: -webkit-linear-gradient(180deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(180deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #16222A 10%, #3A6073 90%); /* W3C */     
+}
+
+/*Car Picker*/
+.car_picker_title{
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.car_picker_title h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 55px;
+  font-size: 4em;
+}
+.car_picker_title h3{
+  color: #fff;
+  font-size: 36px;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+.car_description{
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+  margin: -50px auto 10px auto;
+  width: 320px;
+  text-align: center;
+}
+
+/*Car Slider*/
+.image_url{
+  margin: -20px auto 0 auto;
+  display: block;
+}
+.slider_container{
+  height: 16px;
+  width: 187px;
+  margin: 225px auto 30px auto;
+  background: url("../images/selector_rail_original.png") no-repeat;
+}
+.slider_container #slider{
+  background: none;
+  border: none;
+}
+#slider{
+  width: 175px;
+  height: 16px;
+  margin: auto;
+}
+#slider .ui-slider-handle{
+  background: url("../images/selector_handle.png") 50% 50% no-repeat;
+  background-size: 25px 27px;
+  border: none;
+  height: 27px;
+  width: 25px;
+  margin-top: -1px;
+  outline-style: none;
+}
+.hide { display:none; }
+
+
+/* CONTACT US SECTION
+-------------------------------------------------- */
+.panel{
+  /*width: 60%;
+  margin: 20px auto 0 auto;*/
+  margin: 30px 0 35px 0;
+}
+.table{
+  width: 100%;
+}
+.table thead{
+  background: #f5f5f5;
+}
+.table th, .table td{
+  width: 33%
+}
+.btn-default.reserve:hover{
+  background: #428bca;
+  border-color: #357ebd;
+  color: #fff;
+}
+.google_map {
+  height: 450px;
+  width: 100%;
+  border: 0;
+}
+
+/* THANK YOu SECTION
+-------------------------------------------------- */
+.thank_you h2{
+  font-size: 4em;
+}
+
+
+/* ================================================================== */
+/* === Responsive styles ============================================ */
+/* ================================================================== */
+
+/* Custom Responsive */
+@media only screen and (max-width: 767px) {
+  .navbar-inverse .navbar-brand {
+    background-size: 160px auto;
+    width: 180px;}
+  .nav_number{
+    display: none;
+  }
+  .mobile_feature{
+    display:block;
+    max-width: 100%;
+    margin: 0;
+  }
+  .mobile_feature p{
+    margin: -90px auto 50px auto;
+    width: 250px;
+  }
+  #myCarousel{
+    display: none;
+  }
+  .col-md-4 li{
+    list-style: disc inside;
+  }
+  .car_picker_title h2{
+    font-size: 3em;
+  }
+  .car_picker_title h3{
+    margin: 10px 0 20px 0;
+  }
+  .slider_container{
+    margin-top: 18%;
+  }
+  .car_description{
+    display: none;
+  }
+  .panel.panel-default{
+    display: none;
+  }
+}
+/* Smartphones */
+@media only screen and (max-width: 519px) {
+  .our_fleet{
+    height: 250px;
+  }
+}
+
+/* Large smartphones */
+@media only screen and (min-width: 520px) and (max-width: 779px) {
+  .slide_two img{
+    top: 0px !important;
+  }
+  .slide_three img{
+    top: 0 !important;
+  }
+  .panel{
+    width: 80%;
+  }
+}
+/* Tablets and landscape large smartphones */
+@media only screen and (min-width: 780px) and (max-width: 900px) {
+  .slide_two img{
+    top: 0px !important;
+  }
+  .slide_three img{
+    top: 0 !important;
+  }
+  .panel{
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+  .slide_two img{
+    top: -50px !important;
+  }
+  .slide_three img{
+    top: 0 !important;
+  }
+  .panel{
+    width: 80%;
+  }
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1200px) and (max-width: 1499px){
+  .slide_two img{
+    top: -125px !important;
+  }
+  .slide_three img{
+    top: -100px !important;
+  }
+}
+
+/* Large screen */
+@media only screen and (min-width: 1500px) and (max-width: 1799px){
+  .slide_two img{
+    top: -125px;
+  }
+  .slide_three img{
+    top: -100px !important;
+  }
+}
+
+/* Very large screen */
+@media only screen and (min-width: 1800px){
+  .slide_two img{
+    top: -125px;
+  }
+  .slide_three img{
+    top: -100px !important;
+  }
+}
